@@ -1,0 +1,22 @@
+<h1>Employee Details</h1>
+<table  class="table table table-striped">
+    <thead style="color: darkgoldenrod">
+        <tr>  <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+    </tr>
+              
+       
+    </thead>
+    <tbody> 
+        <tr *ngFor="let emp of employees" style="color: darkred">
+            <td>{{emp.Id}}</td>
+            <td>{{emp.Name}}</td>
+            <td>{{emp.Age}}</td>
+            <td>{{emp.Gender}}</td>
+
+        </tr>
+    </tbody>
+           
+</table>

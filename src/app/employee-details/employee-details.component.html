@@ -1,0 +1,53 @@
+<h1 [ngStyle]="{'background-color':Dynamiccolor}">Anusha</h1>
+<h2 style="color: crimson">Employee Details</h2>
+<table>
+    <tr>
+        <td >Firstname</td>
+        <td>Lastname</td>
+        <td>Age</td>
+        <td>Gender</td>
+      
+    </tr>
+    <tr>
+      
+        <td *ngIf=!show>{{Firstname}}</td>
+        <td >{{Lastname}}</td>
+        <td>{{Age}}</td>
+        <td>{{Gender}}</td>
+    </tr>
+   </table>
+
+   <h3 [ngStyle]="{'background-color':getColor()}"  [ngClass]="{'online':'Isonline'}">
+        Server id:{{ ServerId }} Server Status is: {{ServerStatus}}</h3>
+
+<h1 class="online">Tollplus</h1>
+<h1 [ngClass]="{'online':showOnline}">Tollplus India pvt Ltd.</h1>
+<table border="1">
+        <thead>
+          <tr>
+                <th>Sno</th>
+                <th>Food</th>
+          </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let food of favoritefood; index as i ;let even=even;let odd=odd" [ngClass]="{odd:odd,even:even}">
+                <td>
+                {{i+1}}
+                </td>
+                <td>
+                {{food}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+table{
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin-left:5%;
+  
+}
+tr,td{border:1px solid black;}
+h2{
+    margin-left:2%;
+  
+}
+.online
+{
+    color:blue;
+    font-style: italic;
+}
+body{
+    margin-left: 5%;
+}
+.odd{
+    color:red;
+}
+.even{
+    color:blue;
+}

@@ -1,0 +1,20 @@
+<h1>Angular Pipes</h1>
+
+<p>{{Name}}</p>
+<p>Lowercase:{{Name | lowercase}}</p>
+<p>Uppercase:{{Name | uppercase}}</p>
+<h3>Titlecase:{{Message | titlecase}}</h3>
+<p>Json:{{Person | json}}</p>
+<p>Slice:{{Message |slice:7}}</p>
+<p>Slicing:{{Name | slice : 0:14}}</p>
+<p>Pipe:{{56.5656 | number:'7.2-3'}}</p>
+<p>Percent:{{465.5647 | percent}}</p>
+<p>Currency:{{556566 | currency:''}}</p>
+<p>CurrencyUae:{{556566 | currency:'AED'}}</p>
+<p>Currency:{{556566 | currency:'INR'}}</p>
+<p>Currency:{{556566 | currency:'EUR'}}</p>
+<p>Currency:{{556566 | currency:'KRW'}}</p>
+<p>Date:{{Date }}</p>
+<p>DateShort:{{Date | date: 'short' }}</p>
+<p>Medium:{{Date | date: 'mediumDate' }}</p>
+<p>Long:{{Date | date: 'longTime' }}</p>
